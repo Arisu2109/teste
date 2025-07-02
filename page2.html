@@ -16,14 +16,42 @@
       padding: 20px;
       text-align: center;
     }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px; /* espace entre le texte et le bouton */
+    }
+
     p {
       font-size: 24px;
       color: #6d4c41;
       max-width: 600px;
+      margin: 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #0288d1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #026fa4;
     }
   </style>
 </head>
 <body>
-  <p>Bienvenue sur la deuxième page ! Voilà un texte simple pour montrer que la navigation marche bien.</p>
+  <div class="content">
+    <p>Bienvenue sur la deuxième page !</p>
+    <button onclick="location.href='index.html'">Aller à la page d'accueil</button>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScJN7i-r7Db8CLU__lndngv6QRyUBRCWwmVBYyBc6SCiD4BXw/viewform?embedded=true" width="640" height="420" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+  </div>
 </body>
 </html>
